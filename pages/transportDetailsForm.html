@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../style.css" />
+		<title>Student Information System</title>
+	</head>
+	<body>
+		<nav>
+			<div class="container-max">
+				<a href="/">Student Information System</a>
+				<ul>
+					<li>
+						<a href="./studentDetails.html">Student Details</a>
+					</li>
+					<li>
+						<a href="./enquiryProcess.html">Enquiry Process</a>
+					</li>
+					<li>
+						<a href="./noticeBoard.html">Notice Board</a>
+					</li>
+					<li>
+						<a href="./transportDetails.html">Transport Details</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<main class="container-max main">
+			<div class="d-flex justify-between">
+				<h1>Add Transport Details</h1>
+			</div>
+			<div>
+				<form action="" method="post">
+					<div class="grid">
+						<div>
+							<label for="studentid">Student ID</label>
+							<input type="text" name="studentid" id="studentid" />
+						</div>
+						<div>
+							<label for="transport">Transport Type</label>
+							<select name="transport" id="transport">
+								<option value="Walking">Walking</option>
+								<option value="Van">Van</option>
+								<option value="Bus">Bus</option>
+							</select>
+						</div>
+						<div>
+							<label for="transportRoute">Transport Route</label>
+							<input type="text" name="transportRoute" id="transportRoute" />
+						</div>
+						<div>
+							<label for="vehicleNumber">Vehicle Number</label>
+							<input type="text" name="vehicleNumber" id="vehicleNumber" />
+						</div>
+						<div>
+							<label for="driverName">Driver Name</label>
+							<input type="text" name="driverName" id="driverName" />
+						</div>
+						<div>
+							<label for="driverContact">Driver Contact Details</label>
+							<input type="text" name="driverContact" id="driverContact" />
+						</div>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</main>
+	</body>
+</html>

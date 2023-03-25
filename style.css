@@ -1,0 +1,197 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	font-size-adjust: 100%;
+	scroll-behavior: smooth;
+}
+body {
+	color: black;
+	font-family: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1.6rem;
+	line-height: 26px;
+	min-width: 320px;
+	overflow-x: hidden;
+	background-color: rgb(244, 244, 244);
+}
+
+/* Common Elements */
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+i {
+	overflow: hidden;
+	text-align: center;
+}
+img {
+	max-width: 100%;
+}
+a {
+	text-decoration: none;
+	color: #740606;
+	font-weight: 500;
+}
+a:hover,
+a:focus,
+a:target {
+	text-decoration: underline;
+	color: #e17070;
+}
+
+/* Utility Classes */
+.container-max {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 1rem;
+}
+.w-100 {
+	width: 100%;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.d-flex {
+	display: flex;
+}
+.fw-medium {
+	font-weight: 500;
+}
+.text-center {
+	text-align: center;
+}
+.main {
+	padding: 5rem 0;
+}
+button {
+	border: 1px solid;
+	background-color: transparent;
+	padding: 0.6rem 4rem;
+	font-size: 1.6rem;
+	cursor: pointer;
+}
+button:hover {
+	background-color: black;
+	color: white;
+	transition: 0.2s;
+}
+table {
+	width: 100%;
+}
+table tr th,
+table tr td {
+	padding: 4px 12px;
+}
+
+/* Navigation Bar */
+nav {
+	padding: 1.6rem 0;
+	font-size: 1.8rem;
+	border-bottom: 1px solid black;
+}
+nav > div {
+	display: flex;
+	justify-content: space-between;
+}
+nav ul {
+	display: flex;
+	gap: 2rem;
+}
+form {
+	border: 1px solid;
+	padding: 3rem;
+	margin: 4rem auto 2rem;
+	width: 100%;
+	max-width: 700px;
+	display: flex;
+	flex-direction: column;
+}
+form label {
+	font-weight: 500;
+	margin-bottom: 0.4rem;
+}
+form > div {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.2rem;
+}
+input,
+select {
+	padding: 1rem 2rem;
+	width: 100%;
+}
+button {
+	margin: 2rem auto 0;
+}
+fieldset {
+	border: 0;
+}
+
+.table-container {
+	overflow-x: scroll;
+}
+table tr {
+	white-space: nowrap;
+}
+
+form .grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+}
+
+h1 {
+	margin-bottom: 3rem;
+}
+
+.studentDetails {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	border: 1px solid black;
+}
+
+.studentDetails > div > div {
+	border: 1px solid black;
+	padding: 0.5rem 1rem;
+}
+.studentDetails > div:first-of-type {
+	font-weight: 600;
+}
+
+.heroSection {
+	background-image: url("./bg.avif");
+	height: calc(100vh - 130px);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.heroSection > div:first-of-type {
+	background-color: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	inset: 0;
+}
+.heroSection > div:last-of-type {
+	position: relative;
+	font-size: 3.2rem;
+	max-width: 520px;
+	line-height: 1.5;
+	font-weight: 500;
+}
+.footer {
+	padding: 2rem 0;
+}
